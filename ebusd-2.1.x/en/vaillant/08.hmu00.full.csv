@@ -47,7 +47,7 @@ r;w,,CircuitBuildingHeatingPumpSpeed,D.222 Building cirtcuit pump speed (heating
 r;w,,CircuitBuildingCoolingPumpSpeed,D.223 Building cirtcuit pump speed (cooling). 0-100% (49=auto). Step 1. Factory 49,,,,3317,,,D1B,,%,,,,,,,,,,,,,,,,,,,,,,,,
 r;w,,CircuitBuildingHwcPumpSpeed,D.224 Building cirtcuit pump speed (hwc). 0-100% (49=auto). Step 1. Factory 49,,,,3318,,,D1B,,%,,,,,,,,,,,,,,,,,,,,,,,,
 r,,CoolingEnabled,D.227 Cooling Enabled,,,,331b,,,UIN,0=off;1=on,,,,,,,,,,,,,,,,,,,,,,,,,
-r,,MaximunExteriorPowerUnit,D.231 Maximun exterior unit power,,,,331f,,,D1B,,A,,,,,,,,,,,,,,,,,,,,,,,,
+r,,ExteriorUnitMaxCurrent,D.231 Maximum exterior unit current,,,,331f,,,D1B,,A,,,,,,,,,,,,,,,,,,,,,,,,
 r,,HeatExchangerEnabled,D.233 Heat exchanger,,,,3321,,,UIN,0=off;1=on,,,,,,,,,,,,,,,,,,,,,,,,,
 r,,CoolantCompressorHysteresis,D.363 Coolant compressor hysteresis,,,,353f,,,D2C,,K,,,,,,,,,,,,,,,,,,,,,,,,
 #r,,FanBoost,D.366 Fan boost (CHECK),,,,3541,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
