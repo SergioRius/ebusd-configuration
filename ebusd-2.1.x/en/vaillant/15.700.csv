@@ -24,8 +24,8 @@ r;w,,HydraulicScheme,system schema,,,,3600,,,UIN,,,Systemschema
 r,,WaterPressure,water pressure,,,,3900,,,pressv,,,Wasserdruck
 r;w,,SolarYieldTotal,total solar yield,,,,3D00,,,energy4,,,Solarertrag gesamt
 r;w,,YieldTotal,total environmental yield,,,,3E00,,,energy4,,,Umweltertrag gesamt
-r;w,,VentilationDay,day ventilation speed,,,,4200,,,UIN,,,Ventilation speed during day
-r;w,,VentilationNight,night ventilation,,,,4300,,,UIN,,,Ventilation speed during night
+#r;w,,VentilationDay,day ventilation speed,,,,4200,,,UIN,,,Ventilation speed during day
+#r;w,,VentilationNight,night ventilation,,,,4300,,,UIN,,,Ventilation speed during night
 r;w,,HwcMaxFlowTempDesired,hwc max flow temp desired,,,,4600,,,tempv,,,maximum flow temperature setpoint of Hwc
 r,,SystemFlowTemp,system flow temp,,,,4B00,,,tempv,,,Systemvorlauf
 r;w,,MultiRelaySetting,multifunction relay setting,,,,4D00,,,mamode,,,
@@ -46,10 +46,10 @@ r;w,,PrFuelSum,total fuel consumption,,,,5D00,,,energy4,,,Dieses Jahr Brennstoff
 #r;w,,Unknown67,(VR70 konfig 1),,,,6700,,,tempv,,,unknown value
 #r;w,,Unknown68,(VR70 konfig 1),,,,6800,,,tempv,,,unknown value
 r;w,,OpModeEffect,op mode effect,,,,6900,,,zonesel,,,selection which heating circuit is affected by changing parameters in the basic display
-r;w,,Installer1,installer name 1,,,,6C00,,,shortname,,,installer's name
-r;w,,Installer2,installer name 2,,,,6D00,,,shortname,,,installer's name
-r;w,,PhoneNumber1,phone number 1,,,,6F00,,,shortphone,,,installer's telephone number
-r;w,,PhoneNumber2,phone number 2,,,,7000,,,shortphone,,,installer's telephone number
+#r;w,,Installer1,installer name 1,,,,6C00,,,shortname,,,installer's name
+#r;w,,Installer2,installer name 2,,,,6D00,,,shortname,,,installer's name
+#r;w,,PhoneNumber1,phone number 1,,,,6F00,,,shortphone,,,installer's telephone number
+#r;w,,PhoneNumber2,phone number 2,,,,7000,,,shortphone,,,installer's telephone number
 r;w,,HolidayStartPeriod,holiday start period,,,,7100,,,hfrom,,,start date of holidays
 r;w,,HolidayEndPeriod,holiday end period,,,,7200,,,hto,,,end date of holidays
 r,,DisplayedOutsideTemp,outside temperature,,,,7300,,,tempv,,,Außentemperatur
@@ -59,13 +59,13 @@ r;w,,OpMode,operation mode,,,,7b00,,,opmode,,,operation mode of all/configured z
 r;w,,OpModeCooling,operation mode for cooling,,,,7c00,,,opmode,,,operation mode for cooling of all/configured zone(s)
 r;w,,OpModeVentilation,operation mode for ventilation,,,,1600,,,opmode,,,operation mode for ventilation of all/configured zone(s)
 r;w,,HolidayTemp,holiday temperature,,,,8200,,,tempv,,,holiday setpoint
-r;w,,BankHolidayStartPeriod,bank holiday start period,,,,8300,,,hfrom,,,start date of bank holidays
-r;w,,BankHolidayEndPeriod,bank holiday end period,,,,8400,,,hto,,,end date of bank holidays
+#r;w,,BankHolidayStartPeriod,bank holiday start period,,,,8300,,,hfrom,,,start date of bank holidays
+#r;w,,BankHolidayEndPeriod,bank holiday end period,,,,8400,,,hto,,,end date of bank holidays
 #r;w,,Unknown85,(constant 0/inf),,,,8500,,,tempv,,,unknown value
 r,,OutsideTempAvg,average outside temperature,,,,9500,,,tempv,,,gerundete mittlere Außentemperatur (alle 3h aktualisiert)
 r,,MaintenanceDue,maintenance due,,,,9600,,,yesno,,,zeigt an ob die Wartung fällig ist
-r,,HwcStorageTempTop,hwc storage temperature top,,,,9D00,,,tempv,,,"Temp.fühler WW, oben"
-r,,HwcStorageTempBottom, storage temperature bottom,,,,9E00,,,tempv,,,"Temp.fühler WW, unten"
+#r,,HwcStorageTempTop,hwc storage temperature top,,,,9D00,,,tempv,,,"Temp.fühler WW, oben"
+#r,,HwcStorageTempBottom, storage temperature bottom,,,,9E00,,,tempv,,,"Temp.fühler WW, unten"
 r,,HcStorageTempTop,hc storage temperature top,,,,9F00,,,tempv,,,"Temp.fühler Hz, oben"
 r,,HcStorageTempBottom,hc storage temperature bottom,,,,A000,,,tempv,,,"Temp.fühler Hz, unten"
 # ##### hot water circuit #####,,,,,,,,,,,,,
@@ -151,6 +151,7 @@ r;w,,Hc3PumpStatus,PumpStatus heating circuit 3,,,,1E00,,,UIN,,,pump status of z
 *w,,,,,,B524,02010300,,,,,,
 r;w,,z1OpModeCooling,cooling operation mode zone 1,,,,0100,,,opmode,,,operation mode for cooling of zone 1
 r;w,,z1CoolingTemp,cooling setpoint zone 1,,,,0200,,,tempv,,,desired cooling setpoint for zone 1
+r;w,,z1ManualCoolingTemp,cooling setpoint zone 1,,,,1500,,,tempv,,,desired cooling setpoint for zone 1
 r;w,,z1HolidayStartPeriod,holiday period start zone 1,,,,0300,,,hfrom,,,start date of holidays for zone 1
 r;w,,z1HolidayEndPeriod,holiday period end zone 1,,,,0400,,,hto,,,end date of holidays for zone 1
 r;w,,z1HolidayTemp,room setpoint holiday period zone 1,,,,0500,,,tempv,,,holiday setpoint for zone 1
@@ -159,13 +160,13 @@ r;w,,z1DayTemp,desired temperature zone 1,,,,0700,,,tempv,,,day setpoint for zon
 r;w,,z1ManualTemp,desired temperature zone 1,,,,2200,,,tempv,,,day setpoint for zone 1
 r;w,,z1QuickVetoTemp,quick veto temperature zone 1,,,,0800,,,tempv,,,manual override setpoint for zone 1
 r;w,,z1NightTemp,night temperature zone 1,,,,0900,,,tempv,,,night setpoint for zone 1
-r;w,,z1BankHolidayStartPeriod,bank holiday start zone 1,,,,0C00,,,hfrom,,,start date of bank holidays for zone 1
-r;w,,z1BankHolidayEndPeriod,bank holiday end zone 1,,,,0D00,,,hto,,,end date of bank holidays for zone 1
+#r;w,,z1BankHolidayStartPeriod,bank holiday start zone 1,,,,0C00,,,hfrom,,,start date of bank holidays for zone 1
+#r;w,,z1BankHolidayEndPeriod,bank holiday end zone 1,,,,0D00,,,hto,,,end date of bank holidays for zone 1
 r;w,,z1SFMode,SF mode zone 1,,,,0E00,,,sfmode,,,
 r,,z1RoomTemp,room temperature zone 1,,,,0F00,,,tempv,,,current room temperature in zone 1
 r;w,,z1ValveStatus,valve status zone 1,,,,1200,,,UCH,1=open;0=close,,valve status of zone 1
 r;w,,z1RoomZoneMapping,room zone mapping zone 1,,,,1300,,,zmapping,,,configures which room temperature is assigned to zone 1
-r,,z1ActualRoomTempDesired,room temperature desired zone 1,,,,1400,,,tempv,,,current room setpoint considering all basic conditions passed to the control algorithms
+r;w,,z1ActualRoomTempDesired,room temperature desired zone 1,,,,1400,,,tempv,,,current room setpoint considering all basic conditions passed to the control algorithms
 #r;w,,z1Unknown15Temp,(in noise reduction 24 otherwise 99 - max.air level?) temperature zone 1,,,,1500,,,tempv,,,unknown value for zone 1
 r;w,,z1Shortname,Kurzbezeichnung zone 1,,,,1600,,,shortname,,,short name of zone 1
 r;w,,z1Name1,zone 1 label (first part),,,,1700,,,zname,,,name of zone 1
@@ -189,7 +190,7 @@ r;w,,z2SFMode,SF mode zone 2,,,,0E00,,,sfmode,,,
 r,,z2RoomTemp,room temperature zone 2,,,,0F00,,,tempv,,,current room temperature in zone 2
 r;w,,z2ValveStatus,valve status zone 2,,,,1200,,,UCH,1=open;0=close,,valve status of zone 2
 r;w,,z2RoomZoneMapping,room zone mapping zone 2,,,,1300,,,zmapping,,,configures which room temperature is assigned to zone 2
-r,,z2ActualRoomTempDesired,room temperature desired zone 2,,,,1400,,,tempv,,,current room setpoint considering all basic conditions passed to the control algorithms
+r;w,,z2ActualRoomTempDesired,room temperature desired zone 2,,,,1400,,,tempv,,,current room setpoint considering all basic conditions passed to the control algorithms
 #r;w,,z2Unknown15Temp,(in noise reduction 24 otherwise 99 - max.air level?) temperature zone 2,,,,1500,,,tempv,,,unknown value for zone 2
 r;w,,z2Shortname,Kurzbezeichnung zone 2,,,,1600,,,shortname,,,short name of zone 2
 r;w,,z2Name1,zone 2 label (first part),,,,1700,,,zname,,,name of zone 2
@@ -213,103 +214,209 @@ r;w,,z3SFMode,SF mode zone 3,,,,0E00,,,sfmode,,,
 r,,z3RoomTemp,room temperature zone 3,,,,0F00,,,tempv,,,current room temperature in zone 3
 r;w,,z3ValveStatus,valve status zone 3,,,,1200,,,UCH,1=open;0=close,,valve status of zone 3
 r;w,,z3RoomZoneMapping,room zone mapping zone 3,,,,1300,,,zmapping,,,configures which room temperature is assigned to zone 3
-r,,z3ActualRoomTempDesired,room temperature desired zone 3,,,,1400,,,tempv,,,current room setpoint considering all basic conditions passed to the control algorithms
+r;w,,z3ActualRoomTempDesired,room temperature desired zone 3,,,,1400,,,tempv,,,current room setpoint considering all basic conditions passed to the control algorithms
 #r;w,,z3Unknown15Temp,(in noise reduction 24 otherwise 99 - max.air level?) temperature zone 3,,,,1500,,,tempv,,,unknown value for zone 3
 r;w,,z3Shortname,shortlabel zone 3,,,,1600,,,shortname,,,short name of zone 3
 r;w,,z3Name1,label zone 3 part 1,,,,1700,,,zname,,,name of zone 3
 r;w,,z3Name2,label zone 3 part 2,,,,1800,,,zname,,,name of zone 3
-
-# TODO: CHECK IF THEY WORK. REMOVE.
-# ##### timers #####,,,,,,,,,,,,,
-# air,,,,,,,,,,,,,
-*r,,,,,,B524,03000001,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04000001,,,,,,
-r;w,,ventilationTimer.Monday,timer air monday,,,,00,,,slot1-3,,,
-r;w,,ventilationTimer.Tuesday,timer air tuesday,,,,01,,,slot1-3,,,
-r;w,,ventilationTimer.Wednesday,timer air wednesday,,,,02,,,slot1-3,,,
-r;w,,ventilationTimer.Thursday,timer air thursday,,,,03,,,slot1-3,,,
-r;w,,ventilationTimer.Friday,timer air friday,,,,04,,,slot1-3,,,
-r;w,,ventilationTimer.Saturday,timer air saturday,,,,05,,,slot1-3,,,
-r;w,,ventilationTimer.Sunday,timer air sunday,,,,06,,,slot1-3,,,
-# noise reduction,,,,,,,,,,,,,
-*r,,,,,,B524,03000002,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04000002,,,,,,
-r;w,,noiseReductionTimer.Monday,timer noise reduction monday,,,,00,,,slot1-3,,,
-r;w,,noiseReductionTimer.Tuesday,timer noise reduction tuesday,,,,01,,,slot1-3,,,
-r;w,,noiseReductionTimer.Wednesday,timer noise reduction wednesday,,,,02,,,slot1-3,,,
-r;w,,noiseReductionTimer.Thursday,timer noise reduction thursday,,,,03,,,slot1-3,,,
-r;w,,noiseReductionTimer.Friday,timer noise reduction friday,,,,04,,,slot1-3,,,
-r;w,,noiseReductionTimer.Saturday,timer noise reduction saturday,,,,05,,,slot1-3,,,
-r;w,,noiseReductionTimer.Sunday,timer noise reduction sunday,,,,06,,,slot1-3,,,
-# tariff,,,,,,,,,,,,,
-*r,,,,,,B524,03000003,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04000003,,,,,,
-r;w,,tariffTimer.Monday,timer tariff monday,,,,00,,,slot1-3,,,
-r;w,,tariffTimer.Tuesday,timer tariff tuesday,,,,01,,,slot1-3,,,
-r;w,,tariffTimer.Wednesday,timer tariff wednesday,,,,02,,,slot1-3,,,
-r;w,,tariffTimer.Thursday,timer tariff thursday,,,,03,,,slot1-3,,,
-r;w,,tariffTimer.Friday,timer tariff friday,,,,04,,,slot1-3,,,
-r;w,,tariffTimer.Saturday,timer tariff saturday,,,,05,,,slot1-3,,,
-r;w,,tariffTimer.Sunday,timer tariff sunday,,,,06,,,slot1-3,,,
-# timers hot water,,,,,,,,,,,,,
-*r,,,,,,B524,03010001,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04010001,,,,,,
-r;w,,hwcTimer.Monday,timer hwc monday,,,,00,,,slot1-3,,,
-r;w,,hwcTimer.Tuesday,timer hwc tuesday,,,,01,,,slot1-3,,,
-r;w,,hwcTimer.Wednesday,timer hwc wednesday,,,,02,,,slot1-3,,,
-r;w,,hwcTimer.Thursday,timer hwc thursday,,,,03,,,slot1-3,,,
-r;w,,hwcTimer.Friday,timer hwc friday,,,,04,,,slot1-3,,,
-r;w,,hwcTimer.Saturday,timer hwc saturday,,,,05,,,slot1-3,,,
-r;w,,hwcTimer.Sunday,timer hwc sunday,,,,06,,,slot1-3,,,
-# Zeitprogramm circulation pump,,,,,,,,,,,,,
-*r,,,,,,B524,03010002,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04010002,,,,,,
-r;w,,ccTimer.Monday,timer cc monday,,,,00,,,slot1-3,,,
-r;w,,ccTimer.Tuesday,timer cc tuesday,,,,01,,,slot1-3,,,
-r;w,,ccTimer.Wednesday,timer cc wednesday,,,,02,,,slot1-3,,,
-r;w,,ccTimer.Thursday,timer cc thursday,,,,03,,,slot1-3,,,
-r;w,,ccTimer.Friday,timer cc friday,,,,04,,,slot1-3,,,
-r;w,,ccTimer.Saturday,timer cc saturday,,,,05,,,slot1-3,,,
-r;w,,ccTimer.Sunday,timer cc sunday,,,,06,,,slot1-3,,,
-# timers zone 1,,,,,,,,,,,,,
-*r,,,,,,B524,03030002,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04030002,,,,,,
-r;w,,z1Timer.Monday,timer heating monday,,,,00,,,slot1-3,,,
-r;w,,z1Timer.Tuesday,timer heating tuesday,,,,01,,,slot1-3,,,
-r;w,,z1Timer.Wednesday,timer heating wednesday,,,,02,,,slot1-3,,,
-r;w,,z1Timer.Thursday,timer heating thursday,,,,03,,,slot1-3,,,
-r;w,,z1Timer.Friday,timer heating friday,,,,04,,,slot1-3,,,
-r;w,,z1Timer.Saturday,timer heating saturday,,,,05,,,slot1-3,,,
-r;w,,z1Timer.Sunday,timer heating sunday,,,,06,,,slot1-3,,,
-*r,,,,,,B524,03030001,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04030001,,,,,,
-r;w,,z1CoolingTimer.Monday,timer cooling monday,,,,00,,,slot1-3,,,
-r;w,,z1CoolingTimer.Tuesday,timer cooling tuesday,,,,01,,,slot1-3,,,
-r;w,,z1CoolingTimer.Wednesday,timer cooling wednesday,,,,02,,,slot1-3,,,
-r;w,,z1CoolingTimer.Thursday,timer cooling thursday,,,,03,,,slot1-3,,,
-r;w,,z1CoolingTimer.Friday,timer cooling friday,,,,04,,,slot1-3,,,
-r;w,,z1CoolingTimer.Saturday,timer cooling saturday,,,,05,,,slot1-3,,,
-r;w,,z1CoolingTimer.Sunday,timer cooling sunday,,,,06,,,slot1-3,,,
-# timers zone 2,,,,,,,,,,,,,
-*r,,,,,,B524,03030102,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04030102,,,,,,
-r;w,,z2Timer.Monday,timer heating monday,,,,00,,,slot1-3,,,
-r;w,,z2Timer.Tuesday,timer heating tuesday,,,,01,,,slot1-3,,,
-r;w,,z2Timer.Wednesday,timer heating wednesday,,,,02,,,slot1-3,,,
-r;w,,z2Timer.Thursday,timer heating thursday,,,,03,,,slot1-3,,,
-r;w,,z2Timer.Friday,timer heating friday,,,,04,,,slot1-3,,,
-r;w,,z2Timer.Saturday,timer heating saturday,,,,05,,,slot1-3,,,
-r;w,,z2Timer.Sunday,timer heating sunday,,,,06,,,slot1-3,,,
-*r,,,,,,B524,03030101,,,IGN:1,,,whether timeslot is valid
-*w,,,,,,B524,04030101,,,,,,
-r;w,,z2CoolingTimer.Monday,timer cooling monday,,,,00,,,slot1-3,,,
-r;w,,z2CoolingTimer.Tuesday,timer cooling tuesday,,,,01,,,slot1-3,,,
-r;w,,z2CoolingTimer.Wednesday,timer cooling wednesday,,,,02,,,slot1-3,,,
-r;w,,z2CoolingTimer.Thursday,timer cooling thursday,,,,03,,,slot1-3,,,
-r;w,,z2CoolingTimer.Friday,timer cooling friday,,,,04,,,slot1-3,,,
-r;w,,z2CoolingTimer.Saturday,timer cooling saturday,,,,05,,,slot1-3,,,
-r;w,,z2CoolingTimer.Sunday,timer cooling sunday,,,,06,,,slot1-3,,,
-
+# timers Z1 ,,,,,,,,,,,,,
+#*r,,,,,,b555,a50000,,,IGN:1,,,whether timeslot is valid
+#*w,,,,,,b555,a50000,,,,,,
+#r;w,,z1Timer.MondayP1,Z1 Timer,,,,0000,,,slot1h,,,
+#r;w,,z1Timer.MondayP2,Z1 Timer,,,,0001,,,slot1h,,,
+#r;w,,z1Timer.MondayP3,Z1 Timer,,,,0002,,,slot1h,,,
+#r;w,,z1Timer.MondayP4,Z1 Timer,,,,0003,,,slot1h,,,
+#r;w,,z1Timer.MondayP5,Z1 Timer,,,,0004,,,slot1h,,,
+#r;w,,z1Timer.MondayP6,Z1 Timer,,,,0005,,,slot1h,,,
+#r;w,,z1Timer.MondayP7,Z1 Timer,,,,0006,,,slot1h,,,
+#r;w,,z1Timer.MondayP8,Z1 Timer,,,,0007,,,slot1h,,,
+#r;w,,z1Timer.MondayP9,Z1 Timer,,,,0008,,,slot1h,,,
+#r;w,,z1Timer.MondayP10,Z1 Timer,,,,0009,,,slot1h,,,
+#r;w,,z1Timer.MondayP11,Z1 Timer,,,,0010,,,slot1h,,,
+#r;w,,z1Timer.MondayP12,Z1 Timer,,,,0011,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP1,Z1 Timer,,,,0100,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP2,Z1 Timer,,,,0101,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP3,Z1 Timer,,,,0102,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP4,Z1 Timer,,,,0103,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP5,Z1 Timer,,,,0104,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP6,Z1 Timer,,,,0105,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP7,Z1 Timer,,,,0106,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP8,Z1 Timer,,,,0107,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP9,Z1 Timer,,,,0108,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP10,Z1 Timer,,,,0109,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP11,Z1 Timer,,,,0110,,,slot1h,,,
+#r;w,,z1Timer.TuesdayP12,Z1 Timer,,,,0111,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP1,Z1 Timer,,,,0200,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP2,Z1 Timer,,,,0201,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP3,Z1 Timer,,,,0202,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP4,Z1 Timer,,,,0203,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP5,Z1 Timer,,,,0204,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP6,Z1 Timer,,,,0205,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP7,Z1 Timer,,,,0206,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP8,Z1 Timer,,,,0207,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP9,Z1 Timer,,,,0208,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP10,Z1 Timer,,,,0209,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP11,Z1 Timer,,,,0210,,,slot1h,,,
+#r;w,,z1Timer.WednesdayP12,Z1 Timer,,,,0211,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP1,Z1 Timer,,,,0300,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP2,Z1 Timer,,,,0301,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP3,Z1 Timer,,,,0302,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP4,Z1 Timer,,,,0303,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP5,Z1 Timer,,,,0304,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP6,Z1 Timer,,,,0305,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP7,Z1 Timer,,,,0306,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP8,Z1 Timer,,,,0307,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP9,Z1 Timer,,,,0308,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP10,Z1 Timer,,,,0309,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP11,Z1 Timer,,,,0310,,,slot1h,,,
+#r;w,,z1Timer.ThursdayP12,Z1 Timer,,,,0311,,,slot1h,,,
+#r;w,,z1Timer.FridayP1,Z1 Timer,,,,0400,,,slot1h,,,
+#r;w,,z1Timer.FridayP2,Z1 Timer,,,,0401,,,slot1h,,,
+#r;w,,z1Timer.FridayP3,Z1 Timer,,,,0402,,,slot1h,,,
+#r;w,,z1Timer.FridayP4,Z1 Timer,,,,0403,,,slot1h,,,
+#r;w,,z1Timer.FridayP5,Z1 Timer,,,,0404,,,slot1h,,,
+#r;w,,z1Timer.FridayP6,Z1 Timer,,,,0405,,,slot1h,,,
+#r;w,,z1Timer.FridayP7,Z1 Timer,,,,0406,,,slot1h,,,
+#r;w,,z1Timer.FridayP8,Z1 Timer,,,,0407,,,slot1h,,,
+#r;w,,z1Timer.FridayP9,Z1 Timer,,,,0408,,,slot1h,,,
+#r;w,,z1Timer.FridayP10,Z1 Timer,,,,0409,,,slot1h,,,
+#r;w,,z1Timer.FridayP11,Z1 Timer,,,,0410,,,slot1h,,,
+#r;w,,z1Timer.FridayP12,Z1 Timer,,,,0411,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP1,Z1 Timer,,,,0500,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP2,Z1 Timer,,,,0501,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP3,Z1 Timer,,,,0502,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP4,Z1 Timer,,,,0503,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP5,Z1 Timer,,,,0504,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP6,Z1 Timer,,,,0505,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP7,Z1 Timer,,,,0506,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP8,Z1 Timer,,,,0507,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP9,Z1 Timer,,,,0508,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP10,Z1 Timer,,,,0509,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP11,Z1 Timer,,,,0510,,,slot1h,,,
+#r;w,,z1Timer.SaturdayP12,Z1 Timer,,,,0511,,,slot1h,,,
+#r;w,,z1Timer.SundayP1,Z1 Timer,,,,0600,,,slot1h,,,
+#r;w,,z1Timer.SundayP2,Z1 Timer,,,,0601,,,slot1h,,,
+#r;w,,z1Timer.SundayP3,Z1 Timer,,,,0602,,,slot1h,,,
+#r;w,,z1Timer.SundayP4,Z1 Timer,,,,0603,,,slot1h,,,
+#r;w,,z1Timer.SundayP5,Z1 Timer,,,,0604,,,slot1h,,,
+#r;w,,z1Timer.SundayP6,Z1 Timer,,,,0605,,,slot1h,,,
+#r;w,,z1Timer.SundayP7,Z1 Timer,,,,0606,,,slot1h,,,
+#r;w,,z1Timer.SundayP8,Z1 Timer,,,,0607,,,slot1h,,,
+#r;w,,z1Timer.SundayP9,Z1 Timer,,,,0608,,,slot1h,,,
+#r;w,,z1Timer.SundayP10,Z1 Timer,,,,0609,,,slot1h,,,
+#r;w,,z1Timer.SundayP11,Z1 Timer,,,,0610,,,slot1h,,,
+#r;w,,z1Timer.SundayP12,Z1 Timer,,,,0611,,,slot1h,,,
+## timers Z2 ,,,,,,,,,,,,,
+#*r,,,,,,b555,a50001,,,IGN:1,,,whether timeslot is valid
+#r,,z2Timer.MondayP1,Z2 Timer,,,,0000,,,slot1h,,,
+#r,,z2Timer.MondayP2,Z2 Timer,,,,0001,,,slot1h,,,
+#r,,z2Timer.MondayP3,Z2 Timer,,,,0002,,,slot1h,,,
+#r,,z2Timer.MondayP4,Z2 Timer,,,,0003,,,slot1h,,,
+#r,,z2Timer.MondayP5,Z2 Timer,,,,0004,,,slot1h,,,
+#r,,z2Timer.MondayP6,Z2 Timer,,,,0005,,,slot1h,,,
+#r,,z2Timer.MondayP7,Z2 Timer,,,,0006,,,slot1h,,,
+#r,,z2Timer.MondayP8,Z2 Timer,,,,0007,,,slot1h,,,
+#r,,z2Timer.MondayP9,Z2 Timer,,,,0008,,,slot1h,,,
+#r,,z2Timer.MondayP10,Z2 Timer,,,,0009,,,slot1h,,,
+#r,,z2Timer.MondayP11,Z2 Timer,,,,0010,,,slot1h,,,
+#r,,z2Timer.MondayP12,Z2 Timer,,,,0011,,,slot1h,,,
+#r,,z2Timer.TuesdayP1,Z2 Timer,,,,0100,,,slot1h,,,
+#r,,z2Timer.TuesdayP2,Z2 Timer,,,,0101,,,slot1h,,,
+#r,,z2Timer.TuesdayP3,Z2 Timer,,,,0102,,,slot1h,,,
+#r,,z2Timer.TuesdayP4,Z2 Timer,,,,0103,,,slot1h,,,
+#r,,z2Timer.TuesdayP5,Z2 Timer,,,,0104,,,slot1h,,,
+#r,,z2Timer.TuesdayP6,Z2 Timer,,,,0105,,,slot1h,,,
+#r,,z2Timer.TuesdayP7,Z2 Timer,,,,0106,,,slot1h,,,
+#r,,z2Timer.TuesdayP8,Z2 Timer,,,,0107,,,slot1h,,,
+#r,,z2Timer.TuesdayP9,Z2 Timer,,,,0108,,,slot1h,,,
+#r,,z2Timer.TuesdayP10,Z2 Timer,,,,0109,,,slot1h,,,
+#r,,z2Timer.TuesdayP11,Z2 Timer,,,,0110,,,slot1h,,,
+#r,,z2Timer.TuesdayP12,Z2 Timer,,,,0111,,,slot1h,,,
+#r,,z2Timer.WednesdayP1,Z2 Timer,,,,0200,,,slot1h,,,
+#r,,z2Timer.WednesdayP2,Z2 Timer,,,,0201,,,slot1h,,,
+#r,,z2Timer.WednesdayP3,Z2 Timer,,,,0202,,,slot1h,,,
+#r,,z2Timer.WednesdayP4,Z2 Timer,,,,0203,,,slot1h,,,
+#r,,z2Timer.WednesdayP5,Z2 Timer,,,,0204,,,slot1h,,,
+#r,,z2Timer.WednesdayP6,Z2 Timer,,,,0205,,,slot1h,,,
+#r,,z2Timer.WednesdayP7,Z2 Timer,,,,0206,,,slot1h,,,
+#r,,z2Timer.WednesdayP8,Z2 Timer,,,,0207,,,slot1h,,,
+#r,,z2Timer.WednesdayP9,Z2 Timer,,,,0208,,,slot1h,,,
+#r,,z2Timer.WednesdayP10,Z2 Timer,,,,0209,,,slot1h,,,
+#r,,z2Timer.WednesdayP11,Z2 Timer,,,,0210,,,slot1h,,,
+#r,,z2Timer.WednesdayP12,Z2 Timer,,,,0211,,,slot1h,,,
+#r,,z2Timer.ThursdayP1,Z2 Timer,,,,0300,,,slot1h,,,
+#r,,z2Timer.ThursdayP2,Z2 Timer,,,,0301,,,slot1h,,,
+#r,,z2Timer.ThursdayP3,Z2 Timer,,,,0302,,,slot1h,,,
+#r,,z2Timer.ThursdayP4,Z2 Timer,,,,0303,,,slot1h,,,
+#r,,z2Timer.ThursdayP5,Z2 Timer,,,,0304,,,slot1h,,,
+#r,,z2Timer.ThursdayP6,Z2 Timer,,,,0305,,,slot1h,,,
+#r,,z2Timer.ThursdayP7,Z2 Timer,,,,0306,,,slot1h,,,
+#r,,z2Timer.ThursdayP8,Z2 Timer,,,,0307,,,slot1h,,,
+#r,,z2Timer.ThursdayP9,Z2 Timer,,,,0308,,,slot1h,,,
+#r,,z2Timer.ThursdayP10,Z2 Timer,,,,0309,,,slot1h,,,
+#r,,z2Timer.ThursdayP11,Z2 Timer,,,,0310,,,slot1h,,,
+#r,,z2Timer.ThursdayP12,Z2 Timer,,,,0311,,,slot1h,,,
+#r,,z2Timer.FridayP1,Z2 Timer,,,,0400,,,slot1h,,,
+#r,,z2Timer.FridayP2,Z2 Timer,,,,0401,,,slot1h,,,
+#r,,z2Timer.FridayP3,Z2 Timer,,,,0402,,,slot1h,,,
+#r,,z2Timer.FridayP4,Z2 Timer,,,,0403,,,slot1h,,,
+#r,,z2Timer.FridayP5,Z2 Timer,,,,0404,,,slot1h,,,
+#r,,z2Timer.FridayP6,Z2 Timer,,,,0405,,,slot1h,,,
+#r,,z2Timer.FridayP7,Z2 Timer,,,,0406,,,slot1h,,,
+#r,,z2Timer.FridayP8,Z2 Timer,,,,0407,,,slot1h,,,
+#r,,z2Timer.FridayP9,Z2 Timer,,,,0408,,,slot1h,,,
+#r,,z2Timer.FridayP10,Z2 Timer,,,,0409,,,slot1h,,,
+#r,,z2Timer.FridayP11,Z2 Timer,,,,0410,,,slot1h,,,
+#r,,z2Timer.FridayP12,Z2 Timer,,,,0411,,,slot1h,,,
+#r,,z2Timer.SaturdayP1,Z2 Timer,,,,0500,,,slot1h,,,
+#r,,z2Timer.SaturdayP2,Z2 Timer,,,,0501,,,slot1h,,,
+#r,,z2Timer.SaturdayP3,Z2 Timer,,,,0502,,,slot1h,,,
+#r,,z2Timer.SaturdayP4,Z2 Timer,,,,0503,,,slot1h,,,
+#r,,z2Timer.SaturdayP5,Z2 Timer,,,,0504,,,slot1h,,,
+#r,,z2Timer.SaturdayP6,Z2 Timer,,,,0505,,,slot1h,,,
+#r,,z2Timer.SaturdayP7,Z2 Timer,,,,0506,,,slot1h,,,
+#r,,z2Timer.SaturdayP8,Z2 Timer,,,,0507,,,slot1h,,,
+#r,,z2Timer.SaturdayP9,Z2 Timer,,,,0508,,,slot1h,,,
+#r,,z2Timer.SaturdayP10,Z2 Timer,,,,0509,,,slot1h,,,
+#r,,z2Timer.SaturdayP11,Z2 Timer,,,,0510,,,slot1h,,,
+#r,,z2Timer.SaturdayP12,Z2 Timer,,,,0511,,,slot1h,,,
+#r,,z2Timer.SundayP1,Z2 Timer,,,,0600,,,slot1h,,,
+#r,,z2Timer.SundayP2,Z2 Timer,,,,0601,,,slot1h,,,
+#r,,z2Timer.SundayP3,Z2 Timer,,,,0602,,,slot1h,,,
+#r,,z2Timer.SundayP4,Z2 Timer,,,,0603,,,slot1h,,,
+#r,,z2Timer.SundayP5,Z2 Timer,,,,0604,,,slot1h,,,
+#r,,z2Timer.SundayP6,Z2 Timer,,,,0605,,,slot1h,,,
+#r,,z2Timer.SundayP7,Z2 Timer,,,,0606,,,slot1h,,,
+#r,,z2Timer.SundayP8,Z2 Timer,,,,0607,,,slot1h,,,
+#r,,z2Timer.SundayP9,Z2 Timer,,,,0608,,,slot1h,,,
+#r,,z2Timer.SundayP10,Z2 Timer,,,,0609,,,slot1h,,,
+#r,,z2Timer.SundayP11,Z2 Timer,,,,0610,,,slot1h,,,
+#r,,z2Timer.SundayP12,Z2 Timer,,,,0611,,,slot1h,,,
+## timers hot water,,,,,,,,,,,,,
+#*r,,,,,,b555,a50002,,,IGN:1,,,whether timeslot is valid
+#*w,,,,,,b555,a50002,,,,,,
+#r;w,,hwcTimer.MondayP1,HWC Timer,,,,0000,,,slot1h,,,
+#r;w,,hwcTimer.MondayP2,HWC Timer,,,,0001,,,slot1h,,,
+#r;w,,hwcTimer.MondayP3,HWC Timer,,,,0002,,,slot1h,,,
+#r;w,,hwcTimer.TuesdayP1,HWC Timer,,,,0100,,,slot1h,,,
+#r;w,,hwcTimer.TuesdayP2,HWC Timer,,,,0101,,,slot1h,,,
+#r;w,,hwcTimer.TuesdayP3,HWC Timer,,,,0102,,,slot1h,,,
+#r;w,,hwcTimer.WednesdayP1,HWC Timer,,,,0200,,,slot1h,,,
+#r;w,,hwcTimer.WednesdayP2,HWC Timer,,,,0201,,,slot1h,,,
+#r;w,,hwcTimer.WednesdayP3,HWC Timer,,,,0202,,,slot1h,,,
+#r;w,,hwcTimer.ThursdayP1,HWC Timer,,,,0300,,,slot1h,,,
+#r;w,,hwcTimer.ThursdayP2,HWC Timer,,,,0301,,,slot1h,,,
+#r;w,,hwcTimer.ThursdayP3,HWC Timer,,,,0302,,,slot1h,,,
+#r;w,,hwcTimer.FridayP1,HWC Timer,,,,0400,,,slot1h,,,
+#r;w,,hwcTimer.FridayP2,HWC Timer,,,,0401,,,slot1h,,,
+#r;w,,hwcTimer.FridayP3,HWC Timer,,,,0402,,,slot1h,,,
+#r;w,,hwcTimer.SaturdayP1,HWC Timer,,,,0500,,,slot1h,,,
+#r;w,,hwcTimer.SaturdayP2,HWC Timer,,,,0501,,,slot1h,,,
+#r;w,,hwcTimer.SaturdayP3,HWC Timer,,,,0502,,,slot1h,,,
+#r;w,,hwcTimer.SundayP1,HWC Timer,,,,0600,,,slot1h,,,
+#r;w,,hwcTimer.SundayP2,HWC Timer,,,,0601,,,slot1h,,,
+#r;w,,hwcTimer.SundayP3,HWC Timer,,,,0602,,,slot1h,,,
+#broacast,,,,,,,,,,,,,
 *r,broadcast,,,,,,,,,IGN:1,,,
 *b,broadcast,,,,FE,,,,,IGN:1,,,
 *w,broadcast,,,,FE,,,,,,,,
